@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <title> CALCULATOR </title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div id="calculator">
+        <input id="display" readonly>
+        <div id="keys">
+           <tr>
+                <button onclick="cleardisplay()" class="operator" id="delete">C</button>
+                <button onclick="popdisplay()" class="operator" id="delete">DE</button>
+                <button onclick="percentage()" class="operator" >%</button>
+                <button onclick="appendtodisplay('/')" class="operator">/</button>  
+                <button onclick="appendtodisplay('*')" class="operator">*</button>
+
+           </tr>
+           <tr>
+                <button onclick="appendtodisplay('7')" >7</button>
+                <button onclick="appendtodisplay('8')" >8</button>
+                <button onclick="appendtodisplay('9')" >9</button>
+                <button onclick="appendtodisplay('-')" class="operator">-</button>
+           </tr>
+           <tr>
+                <button onclick="appendtodisplay('4')" >4</button>
+                <button onclick="appendtodisplay('5')" >5</button>
+                <button onclick="appendtodisplay('6')" >6</button>
+                <td rowspan="2"><button onclick="appendtodisplay('+')" class="operator" >+</button></td> 
+           </tr>
+           <tr>
+                <button onclick="appendtodisplay('1')" >1</button>
+                <button onclick="appendtodisplay('2')" >2</button>
+                <button onclick="appendtodisplay('3')" >3</button>
+            </tr>
+            <tr>
+                <button onclick="calculate()" class="operator">=</button>
+                <button onclick="appendtodisplay('00')" >00</button>
+                <button onclick="appendtodisplay('0')" >0</button>
+                <button onclick="appendtodisplay('.')" >.</button>
+
+            </tr>
+           
+
+        </div>
+
+    </div>
+
+    <script src="calc.js"> </script>
+</body>
